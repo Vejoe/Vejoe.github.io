@@ -14,13 +14,13 @@
 <meta property="og:site_name" content="VBlog">
 <meta property="og:description" content="下载安装MySql1.1下载Mysql1https://dev.mysql.com/downloads/mysql/5.1.html#downloads  2.1 安装Mysql先将 zip 包解压到相应的目录，在根文件目录下创建创建 my.ini 配置文件，编辑 my.ini 配置以下基本信息：1234567891011121314151617[mysql]# 设置mysql客户端默认字符集de">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/hexo/1-1.png">
-<meta property="og:image" content="http://yoursite.com/images/hexo/2-1.png">
-<meta property="og:updated_time" content="2019-02-10T12:42:24.147Z">
+<meta property="og:image" content="http://yoursite.com/images/mysql/1-1.png">
+<meta property="og:image" content="http://yoursite.com/images/mysql/2-1.png">
+<meta property="og:updated_time" content="2019-02-10T12:54:51.698Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql入门">
 <meta name="twitter:description" content="下载安装MySql1.1下载Mysql1https://dev.mysql.com/downloads/mysql/5.1.html#downloads  2.1 安装Mysql先将 zip 包解压到相应的目录，在根文件目录下创建创建 my.ini 配置文件，编辑 my.ini 配置以下基本信息：1234567891011121314151617[mysql]# 设置mysql客户端默认字符集de">
-<meta name="twitter:image" content="http://yoursite.com/images/hexo/1-1.png">
+<meta name="twitter:image" content="http://yoursite.com/images/mysql/1-1.png">
   
     <link rel="alternate" href="/atom.xml" title="VBlog" type="application/atom+xml">
   
@@ -90,17 +90,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="下载安装MySql"><a href="#下载安装MySql" class="headerlink" title="下载安装MySql"></a>下载安装MySql</h1><h2 id="1-1下载Mysql"><a href="#1-1下载Mysql" class="headerlink" title="1.1下载Mysql"></a>1.1下载Mysql</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://dev.mysql.com/downloads/mysql/5.1.html#downloads</span><br></pre></td></tr></table></figure>
-<p><img src="\images\hexo\1-1.png" alt="下载mysql"></p>
+<p><img src="\images\mysql\1-1.png" alt="下载mysql"></p>
 <h2 id="2-1-安装Mysql"><a href="#2-1-安装Mysql" class="headerlink" title="2.1 安装Mysql"></a>2.1 安装Mysql</h2><h3 id="先将-zip-包解压到相应的目录，在根文件目录下创建创建-my-ini-配置文件，编辑-my-ini-配置以下基本信息："><a href="#先将-zip-包解压到相应的目录，在根文件目录下创建创建-my-ini-配置文件，编辑-my-ini-配置以下基本信息：" class="headerlink" title="先将 zip 包解压到相应的目录，在根文件目录下创建创建 my.ini 配置文件，编辑 my.ini 配置以下基本信息："></a>先将 zip 包解压到相应的目录，在根文件目录下创建创建 my.ini 配置文件，编辑 my.ini 配置以下基本信息：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line">default-character-set=utf8</span><br><span class="line"> </span><br><span class="line">[mysqld]</span><br><span class="line"># 设置3306端口</span><br><span class="line">port = 3306</span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir=C:\\web\\mysql-8.0.11</span><br><span class="line"># 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错</span><br><span class="line"># datadir=C:\\web\\sqldata</span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections=20</span><br><span class="line"># 服务端使用的字符集默认为8比特编码的latin1字符集</span><br><span class="line">character-set-server=utf8</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine=INNODB</span><br></pre></td></tr></table></figure>
 <h3 id="cmd命令进入Mysql根目录下的bin里面，初始化数据库："><a href="#cmd命令进入Mysql根目录下的bin里面，初始化数据库：" class="headerlink" title="cmd命令进入Mysql根目录下的bin里面，初始化数据库："></a>cmd命令进入Mysql根目录下的bin里面，初始化数据库：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --console</span><br></pre></td></tr></table></figure>
-<h3 id="执行完成后，会输出-root-用户的初始默认密码，如："><a href="#执行完成后，会输出-root-用户的初始默认密码，如：" class="headerlink" title="执行完成后，会输出 root 用户的初始默认密码，如："></a>执行完成后，会输出 root 用户的初始默认密码，如：</h3><p><img src="\images\hexo\2-1.png" alt="初始化密码"></p>
+<h3 id="执行完成后，会输出-root-用户的初始默认密码，如："><a href="#执行完成后，会输出-root-用户的初始默认密码，如：" class="headerlink" title="执行完成后，会输出 root 用户的初始默认密码，如："></a>执行完成后，会输出 root 用户的初始默认密码，如：</h3><p><img src="\images\mysql\2-1.png" alt="初始化密码"></p>
 <h3 id="EdDnpo-lt-hN82r-就是初始密码，后续登录需要用到，你也可以在登陆后修改密码。"><a href="#EdDnpo-lt-hN82r-就是初始密码，后续登录需要用到，你也可以在登陆后修改密码。" class="headerlink" title="EdDnpo&lt;hN82r 就是初始密码，后续登录需要用到，你也可以在登陆后修改密码。"></a>EdDnpo&lt;hN82r 就是初始密码，后续登录需要用到，你也可以在登陆后修改密码。</h3><h3 id="接着输入以下安装命令："><a href="#接着输入以下安装命令：" class="headerlink" title="接着输入以下安装命令："></a>接着输入以下安装命令：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld install</span><br></pre></td></tr></table></figure>
 <h3 id="出现Service-successfully-installed-则安装成功。"><a href="#出现Service-successfully-installed-则安装成功。" class="headerlink" title="出现Service successfully installed.则安装成功。"></a>出现Service successfully installed.则安装成功。</h3><h2 id="3-1-积累Mysql命令语句"><a href="#3-1-积累Mysql命令语句" class="headerlink" title="3.1 积累Mysql命令语句"></a>3.1 积累Mysql命令语句</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">启动Mysql: net start MySQL</span><br><span class="line">停止Mysql: net stop MySQL</span><br><span class="line">卸载Mysql: sc delete MySQL</span><br><span class="line">登陆mysql: mysql -u用户名 -p用户密码</span><br><span class="line">退出MYSQL命令: exit (回车)</span><br><span class="line">跳过权限验证方式重启MySQL服务: mysqld --console --skip-grant-tables --shared-memory</span><br><span class="line">刷新执行指令: FLUSH PRIVILEGES</span><br><span class="line">修改密码: ALTER USER &apos;root&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;new_psd_123&apos;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/20/mysql/" data-id="cjrywh4nv0001f4tss3ox2g9c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/20/mysql/" data-id="cjrywwxus00005gtszl3e2nno" class="article-share-link">Share</a>
       
       
     </footer>
@@ -109,11 +109,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/02/01/mybatis/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/01/26/mybatis/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          (no title)
+          mybatis入门
         
       </div>
     </a>
@@ -145,7 +145,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
     </div>
   </div>
 
@@ -158,7 +158,7 @@
       <ul>
         
           <li>
-            <a href="/2019/02/01/mybatis/">(no title)</a>
+            <a href="/2019/01/26/mybatis/">mybatis入门</a>
           </li>
         
           <li>
