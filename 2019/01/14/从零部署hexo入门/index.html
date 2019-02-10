@@ -14,16 +14,16 @@
 <meta property="og:site_name" content="VBlog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;刚搭好一个属于自己的Blog,开始尝试写一下内容，顺便研究一下怎样写markdown格式的文本。&amp;emsp;&amp;emsp;接下来，我会介绍我自己从零开始部署hexo(包括遇到的坑)。 1.准备工作1.1安装git/node.js(只介绍windows系统)&amp;emsp;&amp;emsp;由于安装hexo之前就要准备好自己的git和Node.js的环境。(点击进入网页进行安装) 1.2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/first/3-1.png">
+<meta property="og:image" content="http://yoursite.com/images/hexo/3-1.png">
 <meta property="og:image" content="http://yoursite.com/images/hexo/3-3-1.png">
 <meta property="og:image" content="http://yoursite.com/images/hexo/3-3-2.png">
 <meta property="og:image" content="http://yoursite.com/images/hexo/3-3-3.png">
 <meta property="og:image" content="http://yoursite.com/images/hexo/3-4.png">
-<meta property="og:updated_time" content="2019-02-10T12:36:31.578Z">
+<meta property="og:updated_time" content="2019-02-10T12:43:18.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零部署hexo入门">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;刚搭好一个属于自己的Blog,开始尝试写一下内容，顺便研究一下怎样写markdown格式的文本。&amp;emsp;&amp;emsp;接下来，我会介绍我自己从零开始部署hexo(包括遇到的坑)。 1.准备工作1.1安装git/node.js(只介绍windows系统)&amp;emsp;&amp;emsp;由于安装hexo之前就要准备好自己的git和Node.js的环境。(点击进入网页进行安装) 1.2">
-<meta name="twitter:image" content="http://yoursite.com/images/first/3-1.png">
+<meta name="twitter:image" content="http://yoursite.com/images/hexo/3-1.png">
   
     <link rel="alternate" href="/atom.xml" title="VBlog" type="application/atom+xml">
   
@@ -100,7 +100,7 @@
 <p>&emsp;&emsp;最后生成这些文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml（配置文件）</span><br><span class="line">├── package.json（基数node.js包信息文件）</span><br><span class="line">├── scaffolds（脚手架，模板文件，用于生成页面或者文章时候用）</span><br><span class="line">|—— node_modules（包依赖模块，npm install后里面会添加依赖）</span><br><span class="line">├── <span class="built_in">source</span>（源文件）</span><br><span class="line">|   ├── _drafts（草稿）</span><br><span class="line">|   └── _posts（文章）</span><br><span class="line">└── themes（主题文件）</span><br></pre></td></tr></table></figure></p>
 <h2 id="2-本地浏览博客"><a href="#2-本地浏览博客" class="headerlink" title="2.本地浏览博客"></a>2.本地浏览博客</h2><h3 id="2-1-清除编译文件-》生成静态文件-》启动服务器"><a href="#2-1-清除编译文件-》生成静态文件-》启动服务器" class="headerlink" title="2.1.清除编译文件-》生成静态文件-》启动服务器"></a>2.1.清除编译文件-》生成静态文件-》启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate(也可以用:hexo g)</span><br><span class="line">hexo server(也可以用:hexo s)</span><br></pre></td></tr></table></figure>
 <p>运行完毕上面的命令后，打开浏览器输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可以浏览到你的本地博客了！</p>
-<h2 id="3-搞好git环境"><a href="#3-搞好git环境" class="headerlink" title="3.搞好git环境"></a>3.搞好git环境</h2><h3 id="3-1-自己先上github创一个属于自己的账号，随后创建自己仓库"><a href="#3-1-自己先上github创一个属于自己的账号，随后创建自己仓库" class="headerlink" title="3.1.自己先上github创一个属于自己的账号，随后创建自己仓库"></a>3.1.自己先上github创一个属于自己的账号，随后创建自己仓库</h3><p><img src="\images\first\3-1.png" alt="创建仓库"></p>
+<h2 id="3-搞好git环境"><a href="#3-搞好git环境" class="headerlink" title="3.搞好git环境"></a>3.搞好git环境</h2><h3 id="3-1-自己先上github创一个属于自己的账号，随后创建自己仓库"><a href="#3-1-自己先上github创一个属于自己的账号，随后创建自己仓库" class="headerlink" title="3.1.自己先上github创一个属于自己的账号，随后创建自己仓库"></a>3.1.自己先上github创一个属于自己的账号，随后创建自己仓库</h3><p><img src="\images\hexo\3-1.png" alt="创建仓库"></p>
 <h3 id="3-2-随后配置github帐户信息"><a href="#3-2-随后配置github帐户信息" class="headerlink" title="3.2.随后配置github帐户信息"></a>3.2.随后配置github帐户信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name yourname //配置用户名</span><br><span class="line">git config --global user.email youremail //邮件地址</span><br><span class="line">--可以输入下面命令来查看自己git信息--</span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
 <h3 id="3-3-创建SSH密钥-在gitbash环境下-，提示输入密码直接默认空白按两次回车"><a href="#3-3-创建SSH密钥-在gitbash环境下-，提示输入密码直接默认空白按两次回车" class="headerlink" title="3.3.创建SSH密钥(在gitbash环境下)，提示输入密码直接默认空白按两次回车"></a>3.3.创建SSH密钥(在gitbash环境下)，提示输入密码直接默认空白按两次回车</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail@mail.com"</span></span><br></pre></td></tr></table></figure>
 <h4 id="在下面目录生成ssh相关文件"><a href="#在下面目录生成ssh相关文件" class="headerlink" title="在下面目录生成ssh相关文件:"></a>在下面目录生成ssh相关文件:</h4><p><img src="\images\hexo\3-3-1.png" alt="ssh路径图"></p>
@@ -113,7 +113,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/14/从零部署hexo入门/" data-id="cjrywb8t40002h4tsz8hw1mw6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/14/从零部署hexo入门/" data-id="cjrywh4nz0002f4ts8d6nzhqk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -122,11 +122,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/02/01/mysql/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/01/20/mysql/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          (no title)
+          mysql入门
         
       </div>
     </a>
@@ -175,7 +175,7 @@
           </li>
         
           <li>
-            <a href="/2019/02/01/mysql/">(no title)</a>
+            <a href="/2019/01/20/mysql/">mysql入门</a>
           </li>
         
           <li>
